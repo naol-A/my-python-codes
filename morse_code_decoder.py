@@ -1,0 +1,94 @@
+fr=open("encoded_message.txt","r")
+fw=open("decoded_message.txt","w")
+data=fr.read()
+lpmx=len(data)
+max=0
+min=0
+lp=0
+bfr=""
+while lp<lpmx:
+    if(data[lp]==" "):
+        if(bfr==".-"):
+             fw.write("a")
+        elif(bfr=="-..."):
+             fw.write("b")
+        elif(bfr=="-.-."):
+             fw.write("c")
+        elif(bfr=="-.."):
+             fw.write("d")
+        elif(bfr=="."):
+             fw.write("e")
+        elif(bfr=="..-."):
+             fw.write("f")
+        elif(bfr=="--."):
+             fw.write("g")
+        elif(bfr=="...."):
+             fw.write("h")
+        elif(bfr==".."):
+             fw.write("i")
+        elif(bfr==".---"):
+             fw.write("j")
+        elif(bfr=="-.-"):
+             fw.write("k")
+        elif(bfr==".-.."):
+             fw.write("l")
+        elif(bfr=="--"):
+             fw.write("m")
+        elif(bfr=="-."):
+             fw.write("n")
+        elif(bfr=="---"):
+             fw.write("o")
+        elif(bfr==".--."):
+             fw.write("p")
+        elif(bfr=="--.-"):
+             fw.write("q")
+        elif(bfr==".-."):
+             fw.write("r")
+        elif(bfr=="..."):
+             fw.write("s")
+        elif(bfr=="-"):
+             fw.write("t")
+        elif(bfr=="..-"):
+             fw.write("u")
+        elif(bfr=="...-"):
+             fw.write("v")
+        elif(bfr==".--"):
+             fw.write("w")
+        elif(bfr=="-..-"):
+             fw.write("x")
+        elif(bfr=="-.--"):
+             fw.write("y")
+        elif(bfr=="--.."):
+             fw.write("z")
+        elif(bfr==".----"):
+             fw.write("1")
+        elif(bfr=="..---"):
+             fw.write("2")
+        elif(bfr=="...--"):
+             fw.write("3")
+        elif(bfr=="....-"):
+             fw.write("4")
+        elif(bfr=="....."):
+             fw.write("5")
+        elif(bfr=="-...."):
+             fw.write("6")
+        elif(bfr=="--..."):
+             fw.write("7")
+        elif(bfr=="---.."):
+             fw.write("8")
+        elif(bfr=="----."):
+             fw.write("9")
+        elif(bfr=="-----"):
+             fw.write("0")
+        elif(bfr==","):
+             fw.write(" ")
+        bfr=""
+        min=max
+    else:
+        bfr=bfr+data[lp]
+        max=+1
+    lp=lp+1
+print("decode")
+fr.close()
+fw.close()
+input("press any key to continue")

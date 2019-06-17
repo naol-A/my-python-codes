@@ -1,0 +1,80 @@
+frw=open("encoded_message.txt","w")
+data=list(input("enter a message to be converted to morse code\n>>"))
+for lp in range(len(data)):
+    if(data[lp]=="a"):
+        frw.write(".-")
+    elif(data[lp]=="b"):
+        frw.write("-...")
+    elif(data[lp]=="c"):
+         frw.write("-.-.")
+    elif(data[lp]=="d"):
+         frw.write("-..")
+    elif(data[lp]=="e"):
+         frw.write(".")
+    elif(data[lp]=="f"):
+         frw.write("..-.")
+    elif(data[lp]=="g"):
+         frw.write("--.")
+    elif(data[lp]=="h"):
+         frw.write("....")
+    elif(data[lp]=="i"):
+         frw.write("..")
+    elif(data[lp]=="j"):
+         frw.write(".---")
+    elif(data[lp]=="k"):
+         frw.write("-.-")
+    elif(data[lp]=="l"):
+         frw.write(".-..")
+    elif(data[lp]=="m"):
+         frw.write("--")
+    elif(data[lp]=="n"):
+         frw.write("-.")
+    elif(data[lp]=="o"):
+         frw.write("---")
+    elif(data[lp]=="p"):
+         frw.write(".--.")
+    elif(data[lp]=="q"):
+         frw.write("--.-")
+    elif(data[lp]=="r"):
+         frw.write(".-.")
+    elif(data[lp]=="s"):
+         frw.write("...")
+    elif(data[lp]=="t"):
+         frw.write("-")
+    elif(data[lp]=="u"):
+         frw.write("..-")
+    elif(data[lp]=="v"):
+         frw.write("...-")
+    elif(data[lp]=="w"):
+         frw.write(".--")
+    elif(data[lp]=="x"):
+         frw.write("-..-")
+    elif(data[lp]=="y"):
+         frw.write("-.--")
+    elif(data[lp]=="z"):
+         frw.write("--..")
+    elif(data[lp]=="1"):
+         frw.write(".----")
+    elif(data[lp]=="2"):
+         frw.write("..---")
+    elif(data[lp]=="3"):
+         frw.write("...--")
+    elif(data[lp]=="4"):
+         frw.write("....-")
+    elif(data[lp]=="5"):
+         frw.write(".....")
+    elif(data[lp]=="6"):
+         frw.write("-....")
+    elif(data[lp]=="7"):
+         frw.write("--...")
+    elif(data[lp]=="8"):
+         frw.write("---..")
+    elif(data[lp]=="9"):
+         frw.write("----.")
+    elif(data[lp]=="0"):
+         frw.write("-----")
+    elif(data[lp]==" "):
+         frw.write(",")
+    frw.write(" ")
+frw.close()
+input("press any key to send")
